@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Crop Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background: #222648;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+        }
+
+        .card-section {
+            padding: 60px 15px;
+        }
+
+        .custom-card {
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #ffffff;
+            height: 100%;
+        }
+
+        .custom-card h2 {
+            margin-bottom: 20px;
+        }
+
+        .custom-card p {
+            font-size: 16px;
+            text-align: center;
+            text-align-last: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/home">Back</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/form">Crop Prediction</a></li>
+                <li class="nav-item"><a class="nav-link" href="/model">Model</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/about">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>About Our Crop Prediction System</h1>
+        <p>Our platform leverages artificial intelligence and data science to empower farmers, helping them make the best crop selection based on soil properties, climate, and environmental conditions.</p>
+        <a href="/form" class="btn btn-primary">Try Prediction</a>
+    </div>
+
+    <div class="container card-section">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="custom-card text-center">
+                    <h2>What We Do</h2>
+                    <p>Our AI-driven crop recommendation system provides precise insights by analyzing multiple agricultural factors, including soil type, temperature, humidity, rainfall, and nutrient composition. This helps farmers maximize their yield and minimize risk.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="custom-card text-center">
+                    <h2>How It Works</h2>
+                    <p>Users enter essential details such as soil pH, nitrogen, phosphorus, potassium levels, temperature, and rainfall. Our advanced AI model processes this information using machine learning algorithms and recommends the best-suited crops for the given conditions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="custom-card text-center">
+                    <h2>Why Choose Us</h2>
+                    <p>Our system is built on a vast dataset of agricultural knowledge, ensuring data-backed and scientifically validated predictions. We focus on sustainability, profitability, and ease of use, making it accessible to farmers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

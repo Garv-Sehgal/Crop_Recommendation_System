@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block body %}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Home - Crop Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="masthead text-white text-center" style="background-color: #222648; padding: 100px 0;">
+        <div class="container">
+            <h1 class="mb-4">Thinking Which Crop Suits You?</h1>
+            <p class="lead mb-5">Evaluate your Land using Our Model, based on different Factors and get the Best Crop to cultivate this year.</p>
+            <form method="POST" action="/form">
+                {% csrf_token %} 
+                <button class="btn btn-primary btn-lg" type="submit">Evaluate</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-icons bg-light text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="/static/img/ml1.png" alt="ML Model" class="img-fluid mb-3" style="height: 80px;">
+                            <h5 class="card-title">ML-Based Prediction</h5>
+                            <p class="card-text">Trained on classification techniques achieving 95%+ accuracy on soil-crop datasets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="/static/img/rese1.jpg" alt="Research Data" class="img-fluid mb-3" style="height: 80px;">
+                            <h5 class="card-title">Research-Driven Dataset</h5>
+                            <p class="card-text">Built with latest agricultural research papers and verified scientific studies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <img src="/static/img/easy1.png" alt="Easy to Use" class="img-fluid mb-3" style="height: 80px;">
+                            <h5 class="card-title">Easy and Quick Usage</h5>
+                            <p class="card-text">User-friendly form — fill key details and get your crop recommendation instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 showcase-img" style="background-image: url('/static/img/resp.png'); background-size: cover; height: 400px;"></div>
+                <div class="col-lg-6 p-5">
+                    <h3>Responsive Design</h3>
+                    <p class="lead">Looks great on desktops, tablets, and phones for easy access anywhere.</p>
+                </div>
+            </div>
+            <div class="row g-0 align-items-center flex-row-reverse">
+                <div class="col-lg-6 showcase-img" style="background-image: url('/static/img/code.png'); background-size: cover; height: 400px;"></div>
+                <div class="col-lg-6 p-5">
+                    <h3>Powered by Bootstrap</h3>
+                    <p class="lead">Built using the latest Bootstrap versions for modern UI and seamless updates.</p>
+                </div>
+            </div>
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 showcase-img" style="background-image: url('/static/img/custom.png'); background-size: cover; height: 400px;"></div>
+                <div class="col-lg-6 p-5">
+                    <h3>Easy Customization</h3>
+                    <p class="lead">Modify, extend, or adjust as needed for your agricultural project needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center py-5" style="background-color: #141732;">
+        <div class="container">
+            <h2 class="mb-4">Drop Your Email for Further Assistance</h2>
+            <form class="row justify-content-center align-items-center">
+                <div class="col-md-5 mb-2">
+                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-auto mb-2">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div>
+            </form>            
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+{% endblock body %}

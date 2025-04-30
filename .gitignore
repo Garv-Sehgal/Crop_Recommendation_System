@@ -1,0 +1,39 @@
+# Python
+_pycache_/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment/config files
+.env
+
+# Node modules (if using JS packages)
+node_modules/
+
+# Data files (you can change this if you want to keep some public datasets)
+*.csv
+*.xls
+*.xlsx
+*.json
+
+# Logs
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# VS Code config
+.vscode/
