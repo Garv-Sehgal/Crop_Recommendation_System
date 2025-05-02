@@ -19,10 +19,10 @@ A Machine Learning-based web application that recommends the most suitable crop 
 ## 📦 Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/Garv-Sehgal/Crop-Recommendation-System.git
-   cd Crop-Recommendation-System
-   ```
+```
+git clone https://github.com/Garv-Sehgal/Crop-Recommendation-System.git
+cd Crop-Recommendation-System
+```
 2. Create a virtual environment and activate it:
 ```
 python -m venv venv
