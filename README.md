@@ -44,10 +44,10 @@ Then, open your browser and go to http://127.0.0.1:8000/
 | Nitrogen (N)   | 90            |
 | Phosphorus (P) | 42            |
 | Potassium (K)  | 43            |
-| Temperature    | 22.5          |
+| Temperature    | 22            |
 | Humidity       | 80%           |
 | pH             | 6.5           |
-| Rainfall       | 200mm         |
+| Rainfall       | 200           |
 
 **Output: Rice**
 
